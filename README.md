@@ -1,4 +1,4 @@
-# StadiumAssist_AI
+# 🤖 StadiumAssist_AI
 
 ## 🚀 Live Demo
 
