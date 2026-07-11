@@ -69,7 +69,6 @@ StadiumAssist-AI/
 - 🛡️ Safety filtering for AI responses
 - 🌐 Simple and responsive Streamlit interface
 
---
 
 ## 🛠️ Technology Stack
 
