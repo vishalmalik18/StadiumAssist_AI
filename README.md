@@ -28,7 +28,7 @@ Traditional help desks may become crowded during peak hours, making it difficult
 StadiumAssist AI addresses this challenge by providing an intelligent AI-powered chatbot capable of answering match-day questions and improving the overall stadium experience.
 
 
----
+
 
 ## 📂 Project Structure
 
