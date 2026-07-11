@@ -18,7 +18,6 @@ StadiumAssist AI is a Generative AI-powered chatbot designed to improve the matc
 
 The application uses **Google Gemini 2.5 Flash** to deliver natural, conversational, and context-aware responses through an easy-to-use Streamlit interface.
 
---
 
 ## 🎯 Problem Statement
 
