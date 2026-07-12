@@ -8,7 +8,12 @@ load_dotenv()
 
 api_key = os.getenv("GEMINI_API_KEY")
 
-client = genai.Client(api_key=api_key)
+@st.cache_resource
+def get_gemini_client():
+    api_key = os.getenv("GEMINI_API_KEY")
+    return genai.Client(api_key=api_key)
+
+client = get_gemini_client()
 
 assistant_role = """
 You are an AI assistant built for the FIFA World Cup 2026.
