@@ -42,13 +42,17 @@ I don't have reliable information about that topic
 """
 
 def generate_response(my_question):
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=my_question,
-        config=types.GenerateContentConfig(
-            system_instruction=assistant_role,
-            safety_settings=emergency_saftey_list
-        )
-    )
-    return response.text
+    try:
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=my_question,
+            config=types.GenerateContentConfig(
+                system_instruction=assistant_role,
+                safety_settings=emergency_saftey_list
+                )
+            )
+        return response.text
+    
+    except Exception:
+         return "Sorry, the AI service is temporarily unavailable. Please try again later."
 
