@@ -47,6 +47,10 @@ StadiumAssist-AI/
 │   └── Safety configuration
 │       Defines Gemini safety settings and content filtering
 │
+├── test_app.py
+│   └── Unit tests
+│       Tests the application's core functionality and response generation
+│
 ├── .env
 │   └── Stores the Gemini API key
 │
