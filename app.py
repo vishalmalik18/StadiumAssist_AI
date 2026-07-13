@@ -9,6 +9,17 @@ st.set_page_config(
 
 st.title("🤖 StadiumAssist AI")
 
+st.markdown("""
+Welcome to **StadiumAssist AI**.
+
+Get help with:
+- 🗺️ Stadium Navigation
+- 🎫 Ticket Support
+- 🎒 Lost & Found
+- ♿ Accessibility Services
+- 🍔 Vendor Recommendations
+- 🚪 Entry & Exit Guidance
+""")
 
 my_question = st.text_input(
     label="Enter your stadium or event query below:",
@@ -16,8 +27,18 @@ my_question = st.text_input(
     help="Type your question and press Enter to receive an automated AI response"
 )
 
-if my_question:
-    with st.spinner("StadiumAssist AI is processing your request..."):
-        answer = generate_response(my_question)
-        st.write(answer)
+if st.button("Get Assistance"):
+
+    if not my_question.strip():
+        st.warning("Please enter a question.")
+    else:
+        with st.spinner("Generating response..."):
+            answer = generate_response(my_question)
+
+        st.subheader("Response")
+        st.success(answer)
+
+st.caption(
+    "StadiumAssist AI provides general stadium assistance and may not reflect live match-day updates."
+)
     
