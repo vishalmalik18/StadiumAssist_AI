@@ -42,7 +42,9 @@ If a user asks about a topic outside your scope, politely respond:
 I don't have reliable information about that topic
 """
 
-def generate_response(my_question):
+def generate_response(my_question:str) -> str:
+    """Generate an AI response for stadium-related questions."""
+    
     try:
         response = client.models.generate_content(
             model="gemini-2.5-flash",
